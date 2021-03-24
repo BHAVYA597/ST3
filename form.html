@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="MiniProject.css">
+</head>
+<body>
+	<script type="text/javascript" src="MiniProject.js"></script>
+	<p>Details Form</p>
+	<form onsubmit="return validateForm()" name="Form">
+		<div id="error"></div>
+		<div>
+		<label>Name :      </label>
+		<input type="text" name="name" id="name" placeholder="Enter your name"required ><br><br>
+		</div>
+		<div>
+		<label>Mob. No. : </label>
+		<input type="number" name="mobno" id="number" placeholder="Enter your mobile number"required><br><br>
+		</div>
+		<div>
+		<label>Email ID: </label>
+		<input type="email" name="email" id="email" placeholder="Enter your Email id" required><br>
+		</div>
+		<button onclick="Add();"id="btn">SUBMIT</button>
+	</form>
+	<hr>
+	<table class="list" id="show">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Number</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+
+</body>
+</html>
